@@ -1,0 +1,54 @@
+.article {
+    background: $white;
+    box-shadow: $box-shadow;
+    border-radius: $border-radius;
+    .post-image a img {
+        width: 100%;
+        height: 240px;
+        background-size: cover;
+        display: block;
+    }
+    .post-body {
+        padding: $spacing * 10 $spacing * 18 0 $spacing * 18;
+    }
+    .post-title a {
+        font-size: 2.25rem;
+        display: block;
+        margin-bottom: $spacing * 6;
+        color: $black-80;
+        &:hover {
+            color: $black-60;
+        }
+    }
+    .post-content p {
+        text-align: justify;
+        line-height: $lh-copy;
+        font-size: 0.8rem;
+        color: $black-60;
+    }
+    .post-details {
+        padding: $spacing * 10 $spacing * 18 $spacing * 10 $spacing * 18;
+        display: block;
+        .post-created {
+            display: inline;
+            font-size: 0.65rem;
+            color: $black-60;
+            padding-right: $spacing * 3;
+            border-right: 1px solid $black-20;
+        }
+        .post-category {
+            display: inline;
+            font-size: 0.65rem;
+            color: $black-60;
+            padding-left: $spacing * 3;
+            padding-right: $spacing * 3;
+            border-right: 1px solid $black-20;
+        }
+        .post-author {
+            display: inline;
+            color: $black-60;
+            padding-left: $spacing * 3;
+            font-size: 0.65rem;
+        }
+    }
+}

@@ -1,0 +1,85 @@
+html,
+body {
+    font-family: 'Archivo', sans-serif;
+    font-size: 16px;
+    background: $white;
+    color: $black-80;
+    height: 100%;
+    line-height: $lh-default;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 700;
+    margin: 0px;
+    line-height: $lh-default;
+}
+
+p {
+    margin: 0px;
+    line-height: $lh-copy;
+}
+
+a {
+    color: $brand;
+    text-decoration: none;
+    &:hover {
+        transition: all 0.5s ease;
+        color: h($brand);
+    }
+}
+
+button {
+    border: 0px;
+    background: transparent;
+    padding: 0px;
+    outline: none !important;
+    cursor: pointer;
+}
+
+input,
+select,
+textarea {
+    outline: none !important;
+}
+
+textarea {
+    resize: none;
+}
+
+#app {
+    display: flex;
+    min-height: 100%;
+}
+
+aside {
+    background: $white;
+    padding: $spacing * 18 $spacing * 18;
+    box-shadow: $box-shadow;
+    width: 240px + $spacing * 48;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+main {
+    background: $lightGrey;
+    padding: $spacing * 18 $spacing * 24;
+    flex-grow: 1;
+}
+
+#posts-index {
+    .article+.article {
+        margin-top: $spacing * 24;
+    }
+}

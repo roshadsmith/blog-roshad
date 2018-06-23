@@ -1,0 +1,60 @@
+aside {
+    header {
+        h1 a {
+            font-size: 1.635rem;
+            color: $black-80;
+            display: block;
+            &:hover {
+                color: $black-60;
+            }
+        }
+        h2 {
+            font-size: 1rem;
+            color: $black-60;
+            font-weight: 400;
+            margin-top: $spacing * 3;
+            line-height: $lh-default;
+        }
+    }
+    hr {
+        margin-top: $spacing * 6;
+        margin-bottom: $spacing * 6;
+        background-color: $black-10;
+        border-color: transparent;
+    }
+    nav {
+        margin-top: $spacing * 3;
+        .nav-item {
+            color: $black-80;
+            display: block;
+            font-weight: 700;
+            &:hover {
+                color: $black-60;
+            }
+            &+.nav-item {
+                margin-top: $spacing * 3;
+            }
+        }
+    }
+    .social-icons {
+        display: flex;
+        margin-top: $spacing * 6;
+        a {
+            display: block;
+            img {
+                width: $spacing * 6;
+                height: $spacing * 6;
+            }
+            &:hover img {
+                opacity: 0.75;
+            }
+            &+a {
+                margin-left: $spacing * 4;
+            }
+        }
+    }
+    .copyright {
+        font-size: 0.7rem;
+        color: $black-60;
+    }
+}

@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
-        {!! style_ts('/css/app.css') !!}
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <link href="https://fonts.googleapis.com/css?family=Archivo" rel="stylesheet">
-        <title>Roshad's Custom Blog</title>
+        <title>Roshad's Blog</title>
     </head>
     <body id="posts-index">
         <div id="app">
@@ -17,6 +17,6 @@
                 @yield('content')            
             </main>
         </div>
-        {!! script_ts('/css/app.css') !!}
+        <script src="{{ asset('js/app.js') }}"></script>
     </body>
 </html>

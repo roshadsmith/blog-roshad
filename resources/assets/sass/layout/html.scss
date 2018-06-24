@@ -65,7 +65,6 @@ textarea {
 
 aside {
     background: $white;
-    padding: $spacing * 18 $spacing * 18;
     box-shadow: $box-shadow;
     width: 240px + $spacing * 48;
     flex-grow: 0;
@@ -74,12 +73,12 @@ aside {
 
 main {
     background: $lightGrey;
-    padding: $spacing * 18 $spacing * 24;
+    padding: $spacing * 18 $spacing * 18;
     flex-grow: 1;
 }
 
 #posts-index {
     .article+.article {
-        margin-top: $spacing * 24;
+        margin-top: $spacing * 18;
     }
 }

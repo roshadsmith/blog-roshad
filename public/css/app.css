@@ -446,7 +446,6 @@ textarea {
 
 aside {
   background: #ffffff;
-  padding: 72px 72px;
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
           box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
   width: 432px;
@@ -459,14 +458,29 @@ aside {
 
 main {
   background: #f5f8fa;
-  padding: 72px 96px;
+  padding: 72px 72px;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
 
 #posts-index .article + .article {
-  margin-top: 96px;
+  margin-top: 72px;
+}
+
+aside .sidebar-content {
+  width: 432px;
+  padding: 72px 72px;
+}
+
+aside .sidebar-content.fixed-top {
+  position: fixed;
+  top: 0px;
+}
+
+aside .sidebar-content.fixed-bottom {
+  position: fixed;
+  bottom: 0px;
 }
 
 aside header h1 a {

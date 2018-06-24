@@ -61,6 +61,9 @@ textarea {
 #app {
     display: flex;
     min-height: 100%;
+    @media (max-width: 48rem) {
+        flex-direction: column;
+    }
 }
 
 aside {
@@ -69,16 +72,40 @@ aside {
     width: 240px + $spacing * 48;
     flex-grow: 0;
     flex-shrink: 0;
+    @media (max-width: 75rem) {
+        width: 240px + $spacing * 38;
+    }
+    @media (max-width: 60rem) {
+        width: 240px + $spacing * 16;
+    }
 }
 
 main {
     background: $lightGrey;
     padding: $spacing * 18 $spacing * 18;
     flex-grow: 1;
+    @media (max-width: 75rem) {
+        padding: $spacing * 14;
+    }
+    @media (max-width: 60rem) {
+        padding: $spacing * 10;
+    }
+    @media (max-width: 48rem) {
+        background: $white;
+    }
 }
 
 #posts-index {
     .article+.article {
         margin-top: $spacing * 18;
+        @media (max-width: 75rem) {
+            margin-top: $spacing * 14;
+        }
+        @media (max-width: 60rem) {
+            margin-top: $spacing * 10;
+        }
+        @media (max-width: 48rem) {
+            margin-top: 0;
+        }
     }
 }

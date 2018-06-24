@@ -444,6 +444,15 @@ textarea {
   min-height: 100%;
 }
 
+@media (max-width: 48rem) {
+  #app {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 aside {
   background: #ffffff;
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
@@ -456,6 +465,18 @@ aside {
       flex-shrink: 0;
 }
 
+@media (max-width: 75rem) {
+  aside {
+    width: 392px;
+  }
+}
+
+@media (max-width: 60rem) {
+  aside {
+    width: 304px;
+  }
+}
+
 main {
   background: #f5f8fa;
   padding: 72px 72px;
@@ -464,8 +485,44 @@ main {
           flex-grow: 1;
 }
 
+@media (max-width: 75rem) {
+  main {
+    padding: 56px;
+  }
+}
+
+@media (max-width: 60rem) {
+  main {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 48rem) {
+  main {
+    background: #ffffff;
+  }
+}
+
 #posts-index .article + .article {
   margin-top: 72px;
+}
+
+@media (max-width: 75rem) {
+  #posts-index .article + .article {
+    margin-top: 56px;
+  }
+}
+
+@media (max-width: 60rem) {
+  #posts-index .article + .article {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 48rem) {
+  #posts-index .article + .article {
+    margin-top: 0;
+  }
 }
 
 aside .sidebar-content {
@@ -473,14 +530,16 @@ aside .sidebar-content {
   padding: 72px 72px;
 }
 
-aside .sidebar-content.fixed-top {
-  position: fixed;
-  top: 0px;
-}
+@media not all and (max-width: 48rem) {
+  aside .sidebar-content.fixed-top {
+    position: fixed;
+    top: 0px;
+  }
 
-aside .sidebar-content.fixed-bottom {
-  position: fixed;
-  bottom: 0px;
+  aside .sidebar-content.fixed-bottom {
+    position: fixed;
+    bottom: 0px;
+  }
 }
 
 aside header h1 a {
@@ -555,6 +614,134 @@ aside .copyright {
   color: rgba(0, 0, 0, 0.6);
 }
 
+@media (max-width: 75rem) {
+  aside .sidebar-content {
+    width: 392px;
+    padding: 56px;
+  }
+
+  aside header h1 a {
+    font-size: 1.5rem;
+  }
+
+  aside header h2 {
+    font-size: 0.9rem;
+  }
+
+  aside hr {
+    margin-top: 18px;
+    margin-bottom: 18px;
+  }
+
+  aside nav {
+    margin-top: 9px;
+  }
+
+  aside nav .nav-item + .nav-item {
+    margin-top: 10px;
+  }
+
+  aside .social-icons {
+    margin-top: 20px;
+  }
+
+  aside .social-icons a img {
+    width: 20px;
+    height: 20px;
+  }
+
+  aside .social-icons a + a {
+    margin-left: 16px;
+  }
+
+  aside .copyright {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 60rem) {
+  aside .sidebar-content {
+    width: 304px;
+    padding: 40px;
+  }
+
+  aside header h1 a {
+    font-size: 1.2rem;
+  }
+
+  aside header h2 {
+    font-size: 0.8rem;
+  }
+
+  aside hr {
+    margin-top: 14px;
+    margin-bottom: 14px;
+  }
+
+  aside nav {
+    margin-top: 8px;
+  }
+
+  aside nav .nav-item + .nav-item {
+    margin-top: 8px;
+  }
+
+  aside .social-icons {
+    margin-top: 17px;
+  }
+
+  aside .social-icons a img {
+    width: 17px;
+    height: 17px;
+  }
+
+  aside .social-icons a + a {
+    margin-left: 12px;
+  }
+
+  aside .copyright {
+    font-size: 0.55rem;
+  }
+}
+
+@media (max-width: 48rem) {
+  aside {
+    width: auto;
+  }
+
+  aside .sidebar-content {
+    width: auto;
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+
+  aside hr {
+    margin-top: 11px;
+    margin-bottom: 11px;
+  }
+
+  aside nav {
+    margin-top: 7px;
+  }
+
+  aside nav .nav-item + .nav-item {
+    margin-top: 7px;
+  }
+
+  aside .social-icons {
+    margin-top: 16px;
+  }
+
+  aside .social-icons a img {
+    width: 17px;
+    height: 17px;
+  }
+
+  aside .social-icons a + a {
+    margin-left: 12px;
+  }
+}
+
 .article {
   background: #ffffff;
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
@@ -618,5 +805,58 @@ aside .copyright {
   color: rgba(0, 0, 0, 0.6);
   padding-left: 12px;
   font-size: 0.65rem;
+}
+
+@media (max-width: 75rem) {
+  .article .post-image a img {
+    height: 200px;
+  }
+
+  .article .post-body {
+    padding: 32px 56px 0 56px;
+  }
+
+  .article .post-title a {
+    font-size: 2rem;
+    margin-bottom: 18px;
+  }
+
+  .article .post-content p {
+    font-size: 0.75rem;
+  }
+
+  .article .post-details {
+    padding: 32px 56px 32px 56px;
+  }
+}
+
+@media (max-width: 60rem) {
+  .article .post-image a img {
+    height: 180px;
+  }
+
+  .article .post-body {
+    padding: 24px 48px 0 24px;
+  }
+
+  .article .post-title a {
+    font-size: 1.8rem;
+    margin-bottom: 16px;
+  }
+
+  .article .post-content p {
+    font-size: 0.7rem;
+  }
+
+  .article .post-details {
+    padding: 24px 40px 24px 24px;
+  }
+}
+
+@media (max-width: 48rem) {
+  .article {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
 }
 
